@@ -21,7 +21,7 @@ class MainPage( webapp.RequestHandler ):
 <div id="bd" role="main">
 <form action="/search" method="post" id="mainform">
           <div>
-               <label for="search">Enter an URL:</label>
+               <label for="search">Paste a long URL here:</label>
                <input type="text" name="search" id="search" value=""/>
                <input type="submit" value="Go!">
           </div>
@@ -55,7 +55,7 @@ class Controller(webapp.RequestHandler):
 <div id="bd" role="main">
 <form action="/search" method="post" id="mainform">
           <div>
-               <label for="search">Enter a URL:</label>
+               <label for="search">Paste a long URL here:</label>
                <input type="text" name="search" id="search" value=""/>
                <input type="submit" value="Short!">
           </div>
@@ -79,7 +79,7 @@ class Controller(webapp.RequestHandler):
 
         self.response.write('</p>')        
 
-        self.response.write('<div id="ft" role="contentinfo"><p>Created by @<a href="http://thinkphp.ro">thinkphp</a> | <a href="https://github.com/thinkphp/shortenerpy">Fork on GitHub</a></p></div>')
+        self.response.write('<div id="ft" role="contentinfo"><p>Created by @<a href="http://adrianstatescu.com">thinkphp</a> | <a href="https://github.com/thinkphp/shortenerpy">Fork on GitHub</a></p></div>')
 
         self.response.write('</div></body></html>')
 
